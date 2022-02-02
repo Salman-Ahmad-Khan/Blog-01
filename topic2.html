@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>How to Rename a Local and Remote Branch in Git</title>
+</head>
+
+<body>
+    <header class="text-pink-600 font-semibold ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+         
+
+
+          <span class="ml-3 text-5xl text-blue-400 font-mono "><strong>Salman</strong>
+            
+          </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center  ">
+            <a href="#" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="#" class="mr-5 hover:text-gray-900">About</a>
+                <a href="index.html" class="mr-5 hover:text-gray-900">Blog</a>
+                <a href="contact.html" class="mr-5 hover:text-gray-900">Contact Us</a>
+          </nav>
+          <button class="inline-flex items-center bg-green-900 border-0 py-1 px-3 focus:outline-none hover:bg-green-900 rounded text-base mt-4 md:mt-0">SignUp
+            <svg fill="black" stroke="currentColor" stroke-linecap="rounded-full" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+    <section>
+        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">How to Rename a Local and Remote Branch in Git</h1>
+
+        <p>Have you ever needed to rename a Git branch? If so, this article will assist you in resolving the problem.
+        </p>
+        <p>Git makes it simple to rename a git branch both locally and remotely. Let's take a look at the solution.</p>
+        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Why would you need to rename a branch in Git?</h1>
+       
+        <p>Git branches are distinct stages in the development of your project. They give you a way to work alongside
+            your master branch while keeping it free of clutter and unfinished code.</p>
+        <p>In a hurry, you might name a branch that doesn't accurately describe the code, or you might want to rename
+            it. Most people want to change their branch names in these situations.</p>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">How to rename a local git branch</h1>
+        <p>You can use this command if you are already in the local branch you want to rename.</p>
+        <pre><code>git branch -m &lt;new_name&gt;</code></pre>
+        <p>If you're on a different branch and want to rename it, use the command below:</p>
+        <pre><code>git branch -m &lt;old_name&gt; &lt;new_name&gt;</code></pre>
+        <p>Use the command below to determine your current branch name:</p>
+        <pre><code>git status </code></pre>
+        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">How to rename a remote git branch</h1>
+        <p>If you want to rename a branch that has already been pushed to a remote repository, use the command below:
+        </p>
+        <pre><code>git push origin -u &lt;new_name&gt;</code></pre>
+        <p>And now you will need to delete the old name. To do this, use this command:</p>
+        <pre><code>git push origin --delete &lt;old_name&gt;</code></pre>
+        <p>To check the changes you just did, login into your client portal, and check the repository you just changed.
+        </p>
+        <p><strong>That's a wrap! Isn’t it so simple? 🥳</strong></p>
+       
+        <amp-iframe src="https://thelearners.substack.com/embed" height="400" layout="responsive"
+            sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" width="600"></amp-iframe>
+
+    </section>
+    </section>
+   
+  <footer class="text-gray-600 body-font bg-gray-900">
+    <div class="container px-1 py-1 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg> -->
+        <!-- <span class="ml-3 text-xl"></span> -->
+      </a>
+      <p class="text-sm font-normal text-green-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-900 sm:py-2 sm:mt-0 mt-4">© 2022 Salman
+        <a href="https://github.com/Salman-Ahmad-Khan" class="text-pink-600 font-medium  ml-1" rel="noopener noreferrer" target="_blank">@Celman</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+       
+        <a href="#" class="ml-3 text-blue-700">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+      
+        <a href="#" class="ml-3 text-blue-700 ">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+
+        
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
