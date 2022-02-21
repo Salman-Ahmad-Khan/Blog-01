@@ -1,143 +1,194 @@
 <!DOCTYPE html>
-<html  class="dark"  lang="en">
+<html class="dark" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" type="image/png" href="https://th.bing.com/th/id/OIP.sL0cXTFO4mmrFauJNDlujAHaKF?w=158&h=215&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png"
+        href="https://th.bing.com/th/id/OIP.sL0cXTFO4mmrFauJNDlujAHaKF?w=158&h=215&c=7&r=0&o=5&dpr=1.25&pid=1.7">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Home</title>
 </head>
+
 <body>
-
-    <header class="text-pink-600 font-semibold ">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-         
-
-
-          <span class="ml-3 text-5xl text-blue-400 font-mono "><strong>Salman</strong>
-            
-          </span>
-
-
- <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center  ">
-            <a href="#" class="mr-5 hover:text-gray-900">Home</a>
-                <a href="#" class="mr-5 hover:text-gray-900">About</a>
-                <a href="index.html" class="mr-5 hover:text-gray-900">Blog</a>
-                <a href="contact.html" class="mr-5 hover:text-gray-900">Contact Us</a>
-          </nav>
-
-          <!-- <button class="inline-flex items-center bg-green-900 border-0 py-1 px-3 focus:outline-none hover:bg-green-900 rounded text-base mt-4 md:mt-0">SignUp
-            <svg fill="black" stroke="currentColor" stroke-linecap="rounded-full" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button> -->
-          
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Salman</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Need Help?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </header>
+    </nav>
+
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/3">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/3">
+                    <div
+                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
 
 
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2" src="https://blog.facialix.com/wp-content/uploads/2021/10/3352204_9c9a_20-1024x576.jpg" alt="blog">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2"
+                            src="https://blog.facialix.com/wp-content/uploads/2021/10/3352204_9c9a_20-1024x576.jpg"
+                            alt="blog">
 
 
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and Programming</h2>
-                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Introduction to Git and GitHub</h1>
-                <p class="leading-relaxed mb-3">
-<!--                     Someone said that experiments are logged on in laboratory notebooks, inventory is jotted down for future reference, students write their notes on their books for future reference as well. That means we look at it this way too. -->
-                    Git is a version control system while GitHub hosts your git repositories and puts them on your GitHub account making them accessible from anywhere across the internet.</p>
-                <a  href="topic1.html"  target="_blank" class="text-indigo-500 inline-flex items-center">Read More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                  
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and
+                            Programming</h2>
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Introduction to Git
+                            and GitHub</h1>
+                        <p class="leading-relaxed mb-3">
+                            <!--                     Someone said that experiments are logged on in laboratory notebooks, inventory is jotted down for future reference, students write their notes on their books for future reference as well. That means we look at it this way too. -->
+                            Git is a version control system while GitHub hosts your git repositories and puts them on
+                            your GitHub account making them accessible from anywhere across the internet.
+                        </p>
+                        <a href="topic1.html" target="_blank" class="text-indigo-500 inline-flex items-center">Read More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            
-            <div class="p-4 lg:w-1/3">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2" src="https://www.scratchcode.io/wp-content/uploads/2020/06/rename-git-branch-locally-and-remotely-1024x576.jpg" alt="blog">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and Programming</h2>
-                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">How to Rename a Local and Remote Branch in Git</h1>
-                <p class="leading-relaxed mb-3">Have you ever needed to rename a Git branch? If so, this article will assist you in resolving the problem.
 
-                 </p>
-                <a href="topic2.html" target="_blank"  class="text-indigo-500 inline-flex items-center">Read More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                  <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                
+                <div class="p-4 lg:w-1/3">
+                    <div
+                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2"
+                            src="https://www.scratchcode.io/wp-content/uploads/2020/06/rename-git-branch-locally-and-remotely-1024x576.jpg"
+                            alt="blog">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and
+                            Programming</h2>
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">How to Rename a Local
+                            and Remote Branch in Git</h1>
+                        <p class="leading-relaxed mb-3">Have you ever needed to rename a Git branch? If so, this article
+                            will assist you in resolving the problem.
+
+                        </p>
+                        <a href="topic2.html" target="_blank" class="text-indigo-500 inline-flex items-center">Read More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                            <span
+                                class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="p-4 lg:w-1/3">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2" src="https://blog.facialix.com/wp-content/uploads/2022/01/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space-1-scaled-1.jpg" alt="blog">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and Programming</h2>
-                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">10 Frameworks Software Developers can learn in 2022</h1>
-                <p class="leading-relaxed mb-3">In this highly competitive world where technologies get outdated very quickly, the only thing which helps a programmer is their learning ability. If you are a quick learner and can learn current technology in demand, you can find the job and the exciting work you are looking for.
+                <div class="p-4 lg:w-1/3">
+                    <div
+                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center border-2"
+                            src="https://blog.facialix.com/wp-content/uploads/2022/01/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space-1-scaled-1.jpg"
+                            alt="blog">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY:Tech and
+                            Programming</h2>
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">10 Frameworks Software
+                            Developers can learn in 2022</h1>
+                        <p class="leading-relaxed mb-3">In this highly competitive world where technologies get outdated
+                            very quickly, the only thing which helps a programmer is their learning ability. If you are
+                            a quick learner and can learn current technology in demand, you can find the job and the
+                            exciting work you are looking for.
 
-                  </p>
-                <a href="topic3.html" target="_blank"  class="text-indigo-500 inline-flex items-center">Read More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-          </div>
-        </div>
-      </section>
+                        </p>
+                        <a href="topic3.html" target="_blank" class="text-indigo-500 inline-flex items-center">Read More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    </section>
 
 
-  
-  <footer class="flex text-gray-600 body-font bg-gray-900">
-    <div class="container px-1 py-1 mx-auto flex items-center sm:flex-row flex-col">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+
+    <footer class="flex text-gray-600 body-font bg-gray-900">
+        <div class="container px-1 py-1 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg> -->
-        <!-- <span class="ml-3 text-xl"></span> -->
-      </a>
-      <p class="text-sm font-normal text-green-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-900 sm:py-2 sm:mt-0 mt-4">© 2022 Salman
-        <!-- <a href="https://github.com/Salman-Ahmad-Khan" class="text-pink-600 font-medium  ml-1" rel="noopener noreferrer" target="_blank">@Celman</a> -->
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-       
-      <a href="https://github.com/Salman-Ahmad-Khan">
-        <img src="https://img.shields.io/badge/GitHub-blue.svg" />
-      </a>
-        <a href="https://www.linkedin.com/in/salman-ahmad-khan-725989200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkYSmrPDxQ8mJWDfVfmVv0A%3D%3D" class="ml-3 text-blue-700 ">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
-        </a>
+                <!-- <span class="ml-3 text-xl"></span> -->
+            </a>
+            <p
+                class="text-sm font-normal text-green-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-900 sm:py-2 sm:mt-0 mt-4">
+                © 2022 Salman
+                <!-- <a href="https://github.com/Salman-Ahmad-Khan" class="text-pink-600 font-medium  ml-1" rel="noopener noreferrer" target="_blank">@Celman</a> -->
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
-        
-      </span>
+                <a href="https://github.com/Salman-Ahmad-Khan">
+                    <img src="https://img.shields.io/badge/GitHub-blue.svg" />
+                </a>
+                <a href="https://www.linkedin.com/in/salman-ahmad-khan-725989200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkYSmrPDxQ8mJWDfVfmVv0A%3D%3D"
+                    class="ml-3 text-blue-700 ">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+
+
+            </span>
+        </div>
+    </footer>
     </div>
-  </footer>
-  
-
-
- 
-     
-     
-     
     </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
