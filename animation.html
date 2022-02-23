@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="runningVehicle.css">
+    <title>Running Vehicle</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c2f30;
+}
+
+.scene {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: #eaeef0;
+    border-radius: 20px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.9), 8px 8px 25px rgba(0, 0, 0, 0.9);
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.sun {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ffff5b,
+        0 0 60px #ffff5b,
+        0 0 80px #ffff5b,
+        0 0 100px #ffff5b;
+
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #333;
+}
+
+.road::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: #0d9e0d;
+
+}
+
+.road::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, transparent 0, transparent 50%, #fff 50%, #fff 100%);
+    background-size: 20px;
+    animation: animatedRoad 0.2s linear infinite;
+
+
+}
+
+@keyframes animatedRoad {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -20px;
+    }
+}
+
+.fa-van-shuttle {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+
+    font-size: 3.5rem;
+    -webkit-text-stroke: 2px #000;
+    z-index: 10;
+    animation: animatedVan 0.2s linear infinite;
+}
+
+@keyframes animatedVan {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+}
+
+.fa-cloud {
+    position: absolute;
+    top: calc(15px *var(--i));
+    left: calc(15px *var(--i));
+    font-size: 2.5em;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+    z-index: 1;
+    animation: animatedClouds 3.5s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+
+}
+
+.fa-tree {
+    position: absolute;
+    bottom: 60px;
+    font-size: 2em;
+    z-index: 2;
+    color: #0d9e0d;
+    animation: animatedClouds 7s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+}
+
+.fa-mountain {
+    position: absolute;
+    bottom: 0;
+    font-size: 10em;
+    color: #8b3c23;
+    animation: animatedClouds 15s linear infinite;
+    animation-delay: calc(-3s * var(--i));
+}
+
+@keyframes animatedClouds {
+    0% {
+        transform: translateX(350px);
+    }
+
+    100% {
+        transform: translateX(-350px);
+    }
+}
+
+  </style>
+</head>
+
+<body>
+    <div class="scene">
+        <i class="fa-solid fa-van-shuttle"></i>
+        <i class="fa-solid fa-cloud" style="--i:1;"></i>
+        <i class="fa-solid fa-cloud" style="--i:2;"></i>
+        <i class="fa-solid fa-cloud" style="--i:3;"></i>
+        <i class="fa-solid fa-cloud" style="--i:4;"></i>
+        <i class="fa-solid fa-cloud" style="--i:5;"></i>
+
+        <i class="fa-solid fa-tree" style="--i:1;"></i>
+        <i class="fa-solid fa-tree" style="--i:2;"></i>
+        <i class="fa-solid fa-tree" style="--i:3;"></i>
+        <i class="fa-solid fa-tree" style="--i:4;"></i>
+        <i class="fa-solid fa-tree" style="--i:5;"></i>
+        <i class="fa-solid fa-tree" style="--i:6;"></i>
+        <i class="fa-solid fa-tree" style="--i:7;"></i>
+
+        <i class="fa-solid fa-mountain" style="--i:1;"></i>
+        <i class="fa-solid fa-mountain" style="--i:2;"></i>
+        <i class="fa-solid fa-mountain" style="--i:3;"></i>
+
+        <div class="sun"></div>
+        <div class="road"></div>
+    </div>
+</body>
+
+</html>
